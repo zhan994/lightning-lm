@@ -56,9 +56,7 @@ Features of Lightning-LM:
 
 - Localization on the NCLT dataset
 
-
-  ![](./doc/lm_loc1_nclt.gif)
-
+![](./doc/lm_loc1_nclt.gif)
 
 ## Build
 
@@ -106,7 +104,7 @@ format.
 Converted dataset addresses:
 
 - OneDrive: https://1drv.ms/f/c/1a7361d22c554503/EpDSys0bWbxDhNGDYL_O0hUBa2OnhNRvNo2Gey2id7QMQA?e=7Ui0f5
-- BaiduYun: https://pan.baidu.com/s/1XmFitUtnkKa2d0YtWquQXw?pwd=xehn 提取码: xehn 
+- BaiduYun: https://pan.baidu.com/s/1XmFitUtnkKa2d0YtWquQXw?pwd=xehn 提取码: xehn
 
 Original dataset addresses:
 
@@ -216,6 +214,13 @@ Lightning-LM特性：
 
 ## 更新
 
+### 2025.11.27
+
+- 在LIO模块中添加了Cauchy's kernel
+- 在定位模块中增加了配置： try_self_extrap，默认关闭。也就是定位模块不会根据自身外推的位姿做定位（因为定位间隔较大，车辆运动较大时不准）。
+- 添加了一个livox的配置文件，因为用livox的人比较多
+- 如果建图时设置了固定高度，那么定位也会使用这个地图高度（默认关闭）
+
 ### 2025.11.13
 
 - 修复了FasterLIO中的两个逻辑问题
@@ -225,9 +230,7 @@ Lightning-LM特性：
 
 - VBR campus数据集上的建图：
 
-
-  ![](./doc/slam_vbr.gif)
-
+![](./doc/slam_vbr.gif)
 
 - VBR上的定位
 
@@ -243,8 +246,7 @@ Lightning-LM特性：
 
 - NCLT 数据集上的定位
 
-
-  ![](./doc/lm_loc1_nclt.gif)
+![](./doc/lm_loc1_nclt.gif)
 
 ## 编译
 
@@ -289,7 +291,7 @@ Ubuntu 20.04 应该也可行，未测试。
 转换后的数据集地址：
 
 - OneDrive: https://1drv.ms/f/c/1a7361d22c554503/EpDSys0bWbxDhNGDYL_O0hUBa2OnhNRvNo2Gey2id7QMQA?e=7Ui0f5
-- BaiduYun: https://pan.baidu.com/s/1XmFitUtnkKa2d0YtWquQXw?pwd=xehn 提取码: xehn 
+- BaiduYun: https://pan.baidu.com/s/1XmFitUtnkKa2d0YtWquQXw?pwd=xehn 提取码: xehn
 
 原始数据集地址：
 
